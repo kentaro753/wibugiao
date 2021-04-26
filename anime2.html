@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime - Page 2</title>
+    <link rel="stylesheet" href="trueform.css">
+</head>
+<script language="Javascript">
+    d=new Date();
+    thu= d.getDay(); ngay= d.getDate();
+    ngay= ((ngay< 10) ? '0' : '') + ngay;
+    thang= d.getMonth ()+1;
+    thang=((thang< 10)? '0' : '') + thang;
+    nam= 1900+d.getYear();
+    gio = d.getHours ();
+    gio= ((gio<10)? '0' : '') + gio;
+    phut = d.getMinutes ();
+    phut=((phut<10)? '0' : '') + phut;
+    giay= d.getSeconds();
+    if (giay < 10) giay='0'+giay;
+    if (thu == 0) thu = "Chủ nhật";
+    if (thu == 1) thu = "Thứ hai";
+    if (thu == 2) thu = "Thứ ba";
+    if (thu == 3) thu = "Thứ tư";
+    if (thu == 4) thu = "Thứ năm";
+    if (thu == 5) thu = "Thứ sáu";
+    if (thu == 6) thu = "Thứ bảy";
+</script>
+<body>
+    <div class="page">
+        <header class="dautrang"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+            <div class="date">
+                <script language="Javascript">
+                    document.write("<p>" + thu + ", ngày " + ngay + " tháng " + thang + " năm " + nam +"</p>");
+                </script>
+            </div>
+            <div class="headimg">
+                <img src="/images/cropped-genshin_23_4K-scaled-1.jpg" alt="" class="head-img">
+            </div>
+            <div class="logo-name">
+                <div>
+                    <a href="Trangchu.html">
+                        <img src="/images/LogoWG.png" width="96" height="96" class="logo" alt="">
+                    </a>
+                </div>
+                <div>
+                    <h1 id="name">
+                        <a href="Trangchu.html" title="Wibu Giáo">Wibu Giáo</a>
+                    </h1>
+                    <p>Không có gì là không thể nếu ta không làm!</p>
+                </div>
+                <div class="slidecontent">
+                    <div class="mySlides">
+                        <a href="post3.html"><img src="/images/post3.jpg" style="width:100% " ></a>
+                      <div class="postname">
+                        <p>Wibu Giáo chính thức hoàn thành! 🎉</p>
+                      </div>
+                    </div>
+                    <div class="mySlides">
+                        <a href="posta9.html"><img src="https://s199.imacdn.com/ta/2021/04/11/8120901515491b38_eb437a341770e270_8096216181411006734221.jpg" style="width:100% " ></a>
+                        <div class="postname">
+                            <p>ANIME EDENS ZERO CHUẨN BỊ LÊN SÓNG TRÊN NETFLIX</p>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <a href="postm6.html"><img src="https://s199.imacdn.com/ta/2021/04/06/399e4d8c7b278cca_bf5cbd012046756f_6055216176739838734221.jpg" style="width:100% " ></a>
+                        <div class="postname">
+                            <p>MANGA GOLGO 13 GHI DANH VÀO SÁCH 'KỶ LỤC GUINNESS THẾ GIỚI'</p>
+                        </div>
+                    </div>
+                    <div class="mySlides">
+                        <a href="postg6.html"><img src="https://static.gamehub.vn/img/files/2021/04/14/GamehubVN-persona-phien-ban-di-dong-17eed984d860e8144.jpg" style="width:100% " ></a>
+                        <div class="postname">
+                            <p>Rộ tin siêu phẩm nhập vai Persona 5 chuẩn bị đổ bộ nền tảng di động</p>
+                        </div>
+                      </div>
+                    <button class="cssbutton button-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="cssbutton button-right" onclick="plusDivs(1)">&#10095;</button>
+                </div>
+                <script>
+                    var slideIndex = 1;
+                    showDivs(slideIndex);
+                  
+                    function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                    }
+                  
+                    function currentDiv(n) {
+                    showDivs(slideIndex = n);
+                    }
+                  
+                    function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    if (n > x.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = x.length}
+                    for (i = 0; i < x.length; i++) {
+                      x[i].style.display = "none";  
+                    }
+                    x[slideIndex-1].style.display = "block";
+                    }
+                </script>
+            </div>
+        </header>
+        <hr>
+        <section class="menu1">
+            <ul>
+                <li class="dropdown">
+                    <a class="dropbtn" href="Trangchu.html"><i class="fas fas fa-home"></i> TRANG CHỦ</a>
+                    <div class="dropdown-content">
+                        <a href="gioithieu.html">Giới Thiệu</a>
+                        <a href="lienhe.html">Liên hệ</a>
+                        <a href="capnhat.html">Cập nhật</a>
+                    </div>
+                </li>
+                <li><a href="anime.html">ANIME</a></li>
+                <li><a href="manga.html">MANGA</a></li>
+                <li><a href="game.html">GAME</a></li>
+                <li><a href="video.html">VIDEO</a></li>
+            </ul>
+            <div id="search">
+                <input type="text" size="36" name="tsearch" placeholder="Search...">
+                <button class="search-icon" type="submit"><i class="fas fa-search"></i></button>
+            </div>
+        </section>
+        <div class="ptitle" id="anime">
+            <h3>
+                <span> Anime</span>
+            </h3>
+            <hr>
+        </div>
+        <div class="main">
+            <div class="cacpost">
+                <div class="post">
+                    <a href="posta1.html" title="ANIME MY HERO ACADEMIA THE MOVIE 3 CHÍNH THỨC CÔNG BỐ NGÀY PHÁT HÀNH">
+                        <img src="/images/posta1.jfif" alt="granny-1">
+                        <h2>ANIME MY HERO ACADEMIA THE MOVIE 3 CHÍNH THỨC CÔNG BỐ NGÀY PHÁT HÀNH</h2>
+                        <p class="dongphu"><i class="far fa-calendar"></i>  4 tháng Tư, 2021  <i class="fas fa-user"></i>  hocsinhmaugiao</p>
+                        <p>Những hình ảnh về phần phim điện ảnh thứ 3 của My Hero Academia đã được hé lộ thông qua đoạn...
+                        </p>
+                        <input type="submit" value="Read more">
+                    </a>
+                </div>
+                <p><i>Sẽ cập nhật thêm bài viết trong tương lai</i></p>
+                <div class="move">
+                    <a class="previous" href="anime.html"> <i class="fas fa-angle-left"></i> Previous</i></a>
+                </div>
+            </div>
+            <div class="secondary">
+                <h3 class="wtitle">
+                    <span>Tin Tức mới</span>
+                </h3>
+                <hr>
+                <ul>
+                    <li><a href="posta12.html">ANIME REVUE STARLIGHT CÔNG BỐ TRAILER MỚI NHẤT</a> 20 tháng Tư, 2021</li>
+                    <li><a href="postg8.html">Tears of Themis - Game hẹn hò khiến người chơi phát...</a> 20 tháng Tư, 2021</li>
+                    <li><a href="postm8.html">MANGA THE ROYAL TUTOR CỦA HIGASA AKAI...</a> 18 tháng Tư, 2021</li>
+                    <li><a href="posta11.html">BỘ TRUYỆN 'SCIENCE MANGA SURVIVAL' RA MẮT</a> 18 tháng Tư, 2021</li>
+                </ul>
+                <h3 class="wtitle">
+                    <span id="video">Các Video hay</span>
+                </h3>
+                <hr id="video">
+                <div class="minipost">
+                    <div class="mpost">
+                        <a href="postv5.html" title="Usada Pekora – Local rabbit goes sicko mode">
+                            <img src="https://i.ytimg.com/vi/0V6gYMaAJnA/maxresdefault.jpg" alt="">
+                            <h2>Usada Pekora – Local rabbit goes sicko mode</h2>
+                            <p class="dongphu"><i class="far fa-calendar"></i>  20 tháng Tư, 2021</p>
+                        </a>
+                    </div>
+                    <div class="mpost">
+                        <a href="postv4.html" title="Anime Mix – Legends Never Die [AMV]">
+                            <img src="https://i.ytimg.com/vi/PcrTcemOh9g/maxresdefault.jpg" alt="">
+                            <div class="tenvideo">
+                                <h2>Anime Mix – Legends Never Die [AMV]</h2>
+                                <p class="dongphu"><i class="far fa-calendar"></i>  20 tháng Tư, 2021</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="mpost">
+                        <a href="postv3.html" title="Chỉ là OP Doraemon thân thuộc nhưng có gì đó không đúng…">
+                            <img src="https://i.ytimg.com/vi/HfUDe3uaC3c/maxresdefault.jpg" alt="">
+                            <div class="tenvideo">
+                                <h2>Chỉ là OP Doraemon thân thuộc nhưng có gì đó không đúng…</h2>
+                                <p class="dongphu"><i class="far fa-calendar"></i>  20 tháng Tư, 2021</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <h3 class="wtitle">
+                    <span>Chuyên mục</span>
+                </h3>
+                <hr>
+                <ul>
+                    <li><a href="anime.html">Anime</a></li>
+                    <li><a href="manga.html">Manga</a></li>
+                    <li><a href="game.html">Game</a></li>
+                    <li><a href="video.html">Video</a></li>
+                    <li><a href="capnhat.html">Cập nhật</a></li>
+                </ul>
+                <a href="https://tdmu.edu.vn/"><img src="/images/TDMU.jpg" alt=""></a>
+            </div>
+        </div>
+        <footer>
+            <div class="col4">
+                <p>Copyright © 2021 <a href="Trangchu.html">Wibu Giáo</a></p>
+                <p>Hotline: 0965728124 (Xin đừng gọi)</p>
+                <p>Email: <a href="mailto:kentaro855@gmail.com">kentaro855@gmail.com</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
